@@ -7,4 +7,4 @@ in VS and .Net Core.
 
 These images show some screens from the running application
 
-![Search Screen](weather-cat)
+![Search Screen](https://github.com/Hunter71a/OpenWeatherMap_C-Sharp_.NETCore/blob/master/img/weather-cat-detailed.png)
