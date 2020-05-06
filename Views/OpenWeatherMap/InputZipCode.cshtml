@@ -1,0 +1,33 @@
+﻿@model OpenWeatherMap.ViewModels.OpenWeatherMap.vmZipCodeEntry
+
+@{
+    ViewData["Title"] = "InputZipCode";
+}
+
+<h1>View the RAW JSON file!</h1>
+
+<h4>Search for weather by ZIP code entry</h4>
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <form asp-action="InputZipCode">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ZipCode" class="control-label"></label>
+                <input asp-for="ZipCode" class="form-control" />
+                <span asp-validation-for="ZipCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

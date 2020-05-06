@@ -1,0 +1,32 @@
+﻿@model OpenWeatherMap.ViewModels.OpenWeatherMap.vmRawJson
+
+@{
+    ViewData["Title"] = "RawJson";
+     Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h1></h1>
+
+
+<div class="container">
+
+    <div class="jumbotron">
+        <h4 class="display-4">This is the raw json file returned from the API</h4>
+        <hr />
+        <div class="container bg-white">
+            <dl class="row">
+                <dt class="col-md-2">
+                    @Html.DisplayNameFor(model => model.output)
+                </dt>
+                <dd class="col-md-8">
+                    @Html.DisplayFor(model => model.output)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
